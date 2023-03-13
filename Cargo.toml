@@ -8,3 +8,6 @@ arrow2 = { git = "https://github.com/ankane/arrow2", rev = "ef0270922a217070ba99
 
 [profile.release]
 strip = true
+
+[build]
+rustflags = ["-C", "target-feature=-crt-static"]
